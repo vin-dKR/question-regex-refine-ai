@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+
+node_modules
+
+# Virtual environment
+.venv/env/
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Database files (if any local)
+*.sqlite3
+
+# Logs
+*.log
+
+# Test / build output
+build/
+dist/
+*.egg-info/
+
+# Misc
+.DS_Store # macOS 

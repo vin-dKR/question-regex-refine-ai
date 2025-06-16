@@ -1,0 +1,22 @@
+{
+  "name": "question-db-update",
+  "version": "1.0.0",
+  "description": "This project provides a Python script to automate the formatting of LaTeX/mathematical expressions within a MongoDB question database. It leverages OpenAI's API to intelligently identify and wrap raw or improperly formatted LaTeX code in `\\(...\\)` delimiters, ensuring proper rendering on the frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.17.0",
+    "openai": "^5.3.0"
+  }
+}
