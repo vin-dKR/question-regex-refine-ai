@@ -80,10 +80,6 @@ async function formatLatexWithAI(text: string, answer: string, options: string[]
         // For example, it converts '\(' to '\\(' and '\alpha' to '\\alpha'.
         cleanContent = cleanContent.replace(/\\(?!\\)/g, '\\\\');
   
-        // Diagnostic logs - CRITICAL FOR DEBUGGING JSON PARSING ISSUES
-        console.log(`--- Raw Content from AI for QID: ${text.substring(0, 50)}... ---\n${formattedContent}`);
-        console.log(`--- Cleaned Content before JSON.parse for QID: ${text.substring(0, 50)}... ---\n${cleanContent}`);
-  
         const parsed = JSON.parse(cleanContent);
         return { question_text: parsed.question_text, answer: parsed.answer, options: parsed.options };
       }
